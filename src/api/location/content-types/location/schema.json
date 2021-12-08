@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "type": "float",
+      "required": true
+    },
+    "long": {
+      "type": "float"
+    },
+    "alerts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alert.alert",
+      "mappedBy": "location"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
