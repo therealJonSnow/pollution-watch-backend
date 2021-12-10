@@ -31,6 +31,12 @@
       "relation": "manyToOne",
       "target": "api::location.location",
       "inversedBy": "alerts"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "alert"
     }
   }
 }
