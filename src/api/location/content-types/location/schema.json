@@ -20,7 +20,7 @@
       "type": "float",
       "required": true
     },
-    "long": {
+    "lng": {
       "type": "float"
     },
     "alerts": {
